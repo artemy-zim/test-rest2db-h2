@@ -22,7 +22,6 @@ public class StudentDAOImpl implements StudentDAO{
         log.info("getAllStudents" + allStudents);
         return allStudents;
     }
-
     @Override
     public Student getStudent(int id) {
         return entityManager.find(Student.class, id);
